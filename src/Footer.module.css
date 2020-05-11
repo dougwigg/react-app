@@ -1,0 +1,36 @@
+.footer {
+    position: relative;
+    border-top-width: 1px;
+    border-top-style: solid;
+    box-sizing: border-box;
+    text-align:right;
+    padding: 2rem;
+}
+
+.footer select {
+    font-size: 1rem;
+    margin-left: .25rem;
+}
+
+.logo {
+    height: 3rem;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion:no-preference) {
+    .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

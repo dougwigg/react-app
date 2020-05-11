@@ -1,0 +1,13 @@
+.lightTheme {
+    color: #085a78;
+    font-family: arial, sans-serif;
+    border-color:#085a78;
+    background-color: #dfdfdf;
+}
+
+.darkTheme {
+    color: rgba(255,255,255,.87);
+    font-family: arial, sans-serif;
+    border-color:rgba(255,255,255,.87);
+    background-color: #121212;
+}
