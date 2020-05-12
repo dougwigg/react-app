@@ -1,0 +1,18 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem;
+    border: none;
+    min-height: calc(100vh - 227px);
+}
+
+.header {
+    margin: 0 0 1rem;
+}
+
+.inner {
+    background-color: hsla(0,0%,100%,.35);
+    padding: 1rem;
+    border-radius: .5rem;
+}    

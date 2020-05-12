@@ -1,0 +1,10 @@
+.header {
+  margin:0 0 1rem;
+}
+
+.backLink {
+  display: block;
+  color: inherit;
+  margin-top: 2rem;
+  text-decoration: none;    
+}
