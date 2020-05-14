@@ -1,0 +1,25 @@
+.track {
+  list-style: none;  
+  background-color: hsla(0,0%,100%,.15);
+  margin: 0 0 .5rem;
+  padding: 1rem .5rem;
+}
+
+.trackInner {
+  display: flex;
+}
+
+.col {
+  flex:1;
+  padding: 0 .5rem;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.viewLink {
+  float: right;  
+  color: inherit;
+  font-weight: 600;
+}
