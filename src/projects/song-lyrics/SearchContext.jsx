@@ -39,7 +39,7 @@ export const SearchProvider = props => {
 
     const CORS_URL = 'https://stark-dusk-62893.herokuapp.com/';
     const BASE_URL = 'http://api.musixmatch.com/ws/1.1/';
-    const API_KEY = '&apikey=4736991441976b2d91946938bfb85445';
+    const API_KEY = '&apikey=YOUR_KEY';
 
     const getTrackList = async () => {
         // Get the top 10 most popular tracks in the US

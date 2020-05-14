@@ -15,7 +15,7 @@ const Search = (props) => {
 
         const CORS_URL = 'https://stark-dusk-62893.herokuapp.com/';
         const BASE_URL = 'http://api.musixmatch.com/ws/1.1/';
-        const API_KEY = '&apikey=4736991441976b2d91946938bfb85445';
+        const API_KEY = '&apikey=YOUR_KEY';
 
         const res = await axios.get(`${CORS_URL}${BASE_URL}track.search?q_track=${trackTitle}&page_size=10&page=1&s_track_rating=desc${API_KEY}`);
 
