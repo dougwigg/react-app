@@ -7,12 +7,12 @@ import styles from './Header.module.css';
 const Header = () => {
     return (
         <ThemeContext.Consumer>
-        { theme => (
-            <header className={`${styles.header} ${theme}`}>
-                React Sandbox      
-            </header>
-        )}
-       </ThemeContext.Consumer>   
+            {theme => (
+                <header className={`${styles.header} ${theme}`}>
+                    React Sandbox
+                </header>
+            )}
+        </ThemeContext.Consumer>
     );
 }
 

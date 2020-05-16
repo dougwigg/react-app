@@ -1,28 +1,75 @@
+.back {
+  font-size: 18px;
+  text-decoration: none;
+  color: inherit;
+}
+
 .card {
-    display:block;
+  display:block;
 }
 
 .desc {
-    font-weight: normal;
-    font-size: 1rem;
+  font-weight: normal;
+  font-size: 1rem;
 }
 
 .form {
-    margin-left: 40px;
-    background-color: hsla(0,0%,100%,.15);
-    padding:1rem;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 40px;
+  background-color: hsla(0,0%,100%,.15);
+  padding:1rem;
 }
 
 .input {
-    font-size: 18px;
-    padding: .5rem;
-    margin-right: 1rem;
-    width: 300px;
+  flex: 1;
+  font-size: 18px;
+  padding: .5rem;
 }
 
-.btn {
-    font-weight: 600;
-    border-radius: 3px;
-    font-size: 18px;
-    padding: 6px 10px;
+.input:focus {
+  outline: 1px solid orange;
+  box-shadow: 0 0 10px orange;
 }
+
+.forClear {
+  position: relative;
+  line-height: 0;
+}
+
+.clear {
+  cursor: pointer;  
+  position: absolute;
+  top: -51px;
+  right: 21px;
+  height: 29px;
+  width: 29px;
+  background-color: #ccc;  
+  border-radius: 50%;
+}
+
+.clear:hover {
+  background-color: #999;    
+}
+
+.clear::after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transform: rotate(45deg);
+  font-size: 30px;
+  line-height: 29px;
+  height: 30px;
+  width: 30px;
+  content: '+';
+}
+
+@media (max-width: 768px) {
+  .form {
+    margin-left: 0;    
+  }
+  .input {
+    flex-basis: 100%;
+  }    
+}  

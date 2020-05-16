@@ -3,15 +3,23 @@
   background-color: hsla(0,0%,100%,.15);
   margin: 0 0 .5rem;
   padding: 1rem .5rem;
+  border-radius:3px;
 }
 
 .trackInner {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .col {
   flex:1;
   padding: 0 .5rem;
+}
+
+.col:last-of-type {
+  flex:0;
+  white-space:nowrap;
 }
 
 .label {
@@ -22,4 +30,15 @@
   float: right;  
   color: inherit;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .results {
+    padding: 0;    
+  }
+  
+  .col {
+    flex-basis: 100%;
+    margin: 0 0 .5rem;
+  }
 }

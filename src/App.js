@@ -8,6 +8,7 @@ import Footer from './Footer';
 
 import HomeTOC from './HomeTOC';
 import Project1 from './projects/Project1';
+import Lyrics from './projects/song-lyrics/Lyrics';
 import Project2 from './projects/Project2';
 import Project3 from './projects/Project3';
 
@@ -23,6 +24,7 @@ function App() {
         <Switch>
           <Route path='/react-app/' exact component={BodyHOC(HomeTOC)} />
           <Route path='/react-app/project1' exact component={BodyHOC(Project1)} />
+          <Route path="/react-app/project1/:songId" component={BodyHOC(Lyrics)}/>
           <Route path='/react-app/project2' exact component={BodyHOC(Project2)}/>
           <Route path='/react-app/project3' exact component={BodyHOC(Project3)}/>
           <Route path='/react-app/' component={BodyHOC(() => <div>That's a 404!</div>)} />

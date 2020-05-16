@@ -9,7 +9,7 @@ const BodyHOC = (Component) => {
       <ThemeContext.Consumer>
         { theme => (
           <section className={`${theme} ${styles.body}`}>
-            <div class={styles.inner}>
+            <div className={styles.inner}>
               <Component {...props} /> 
             </div>
           </section>

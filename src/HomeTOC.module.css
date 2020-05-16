@@ -1,19 +1,31 @@
 .header {
-    margin:0 0 1rem;
+  margin:0 0 1rem;
 }
 
 .backLink {
-    display: block;
-    color: inherit;
-    margin-top: 2rem;
-    text-decoration: none;    
+  display: block;
+  color: inherit;
+  margin-top: 2rem;
+  text-decoration: none;    
 }
 
 .itm {
-    margin:0 0 .5rem;
+  margin:0 0 .5rem;
 }
 
 .itm a {
-    color: inherit;
-    text-decoration: none;  
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;  
+}
+
+.itm a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.itm p {
+  line-height: 1.5rem;    
 }
