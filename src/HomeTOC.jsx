@@ -11,7 +11,7 @@ const HomeTOC = () => {
           <li className={styles.itm}>
             <Link to="/react-app/project1">Song Lyric Search</Link>
             <p>
-              <div>Lyric search using the Musixmatch API. Built using Axios fecth + useContext/useReducer.</div>
+              <div>Lyric search using the Musixmatch API. Built using Axios fetch + useContext/useReducer.</div>
               <div>The styling is still pretty wire-framey, I may circle back on that.</div> 
             </p>
           </li>
