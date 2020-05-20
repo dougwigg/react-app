@@ -9,17 +9,21 @@ const HomeTOC = () => {
         <h2 className={styles.header}>Projects:</h2>
         <ol>
           <li className={styles.itm}>
-            <Link to="/react-app/project1">Song Lyric Search</Link>
+            <Link to="/react-app/covid-by-region">Covid Cases by Region</Link>
             <p>
-              <div>Lyric search using the Musixmatch API. Built using Axios fetch + useContext/useReducer.</div>
-              <div>The styling is still pretty wire-framey, I may circle back on that.</div> 
+              <div>
+                As regions approach re-opening with different strategies, I thought it would be interestng
+                to see the regional state data presented together instead of viewing one-state-at-a-time.
+              </div>
+              <div className={styles.tools}>Uses: ReCharts and the covidtracking.com api for historical data by state.</div>
             </p>
           </li>
           <li className={styles.itm}>
-            <Link to="/react-app/project2">Project 2</Link>
-          </li>
-          <li className={styles.itm}>
-            <Link to="/react-app/project3">Project 3</Link>
+            <Link to="/react-app/project1">Song Lyric Search</Link>
+            <p>
+              <div>Song lyric search by artist/song title.</div>
+              <div className={styles.tools}>Uses: Musixmatch API with Axios fetch.</div> 
+            </p>
           </li>
         </ol>
       </>

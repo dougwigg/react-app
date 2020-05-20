@@ -56,7 +56,7 @@ const Search = (props) => {
         return (
           <div className={styles.card}>
             <Link to="/react-app/" className={styles.back}>
-              &#8678;&nbsp;Back to Homepage
+              &#8678;&nbsp;Homepage
             </Link>
             <h2>Song Lyric Search<span className={styles.desc}> - Search by artist/title</span></h2>
             <form className={styles.form} onSubmit={findTrack.bind(this, dispatch)}>
