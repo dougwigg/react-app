@@ -20,14 +20,14 @@ function App() {
   return (
     <ThemeProvider theme={themeStyle}>
       <Header />
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Switch>
-          <Route path='/' exact component={BodyHOC(HomeTOC)} />
-          <Route path='/covid-by-region' exact component={BodyHOC(CovidByRegionBody)}/>
+          <Route path='/react-app/' exact component={BodyHOC(HomeTOC)} />
+          <Route path='/react-app/covid-by-region' exact component={BodyHOC(CovidByRegionBody)}/>
           <Route path='/react-app/project1' exact component={BodyHOC(Project1)} />
           <Route path="/react-app/project1/:songId" component={BodyHOC(Lyrics)}/>
           <Route path='/react-app/project3' exact component={BodyHOC(Project3)}/>
-          <Route path='/react-app/' component={BodyHOC(() => <div>That's a 404!</div>)} />
+          <Route path='/react-app/' component={BodyHOC(HomeTOC)} />
         </Switch>
       </Router>
       <Footer setThemeFn={setThemeStyle} /> 

@@ -8,7 +8,7 @@ import CovidByRegion from './covid-by-region/CovidByRegion';
 const CovidByRegionBody = () => {
   return (
     <>
-      <Link className={styles.backLink} to="/">&#8678;&nbsp;Homepage</Link>
+      <Link className={styles.backLink} to="/react-app/">&#8678;&nbsp;Homepage</Link>
       <CovidByRegion /> 
     </>
   );

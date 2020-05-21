@@ -9,7 +9,7 @@ const HomeTOC = () => {
         <h2 className={styles.header}>Projects:</h2>
         <ol>
           <li className={styles.itm}>
-            <Link to="/covid-by-region">Covid Cases by Region</Link>
+            <Link to="/react-app/covid-by-region">Covid Cases by Region</Link>
             <p>
               <div>
                 As regions approach re-opening with different strategies, I thought it would be interestng
