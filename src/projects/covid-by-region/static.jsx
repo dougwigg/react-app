@@ -83,10 +83,10 @@ export const getLatestData = (stateData, numDays) => {
   const latest = stateData['data'].slice(1, numDays + 1);
   const chartData = latest.map((day) => {
     return { 
-      'state': day.state
-,     'date': formatDate(day.date), 
-      'increase': day.positiveIncrease, 
-      'deathIncrease': day.deathIncrease
+      'state': day.state,
+      'date': formatDate(day.date), 
+      'case increase': day.positiveIncrease, 
+      'death increase': day.deathIncrease
     }  
   });
   return chartData.reverse(); 

@@ -4,9 +4,7 @@ import Spinner from '../song-lyrics/Spinner';
 import styles from './Covid.module.css';
 
 const SpinnerOrError = (props) => {
-  
   const { errMsg } = props;
-
   return (
     <>
       { 
