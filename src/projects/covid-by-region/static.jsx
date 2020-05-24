@@ -66,11 +66,11 @@ export const stateNames = {
 export const statesForRegion = {
   'northeast': ['ME', 'VT', 'NH', 'MA', 'CT', 'RI'],
   'midatlantic': ['NY', 'NJ', 'PA', 'DE', 'MD', 'VA', 'WV'],
-  'southeast': ['AK', 'TN', 'NC', 'SC', 'LA', 'MS', 'AL', 'GA', 'FL'],
-  'northwest': ['WA', 'OR', 'ID', 'MT', 'WY'],
+  'southeast': ['AR', 'TN', 'NC', 'SC', 'LA', 'MS', 'AL', 'GA', 'FL'],
+  'northwest': ['AK', 'WA', 'OR', 'ID', 'MT', 'WY'],
   'midwest': ['ND', 'SD', 'NE', 'KS', 'WI', 'IA', 'MO', 'MI', 'IL', 'IN', 'OH', 'KY'],
   'southwest': ['UT', 'CO', 'NM', 'AZ', 'OK', 'TX'],
-  'west': ['CA', 'NV']
+  'west': ['CA', 'NV', 'HI']
 };
 
 export const formatDate = (dateNum) => {

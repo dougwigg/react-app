@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { ThemeContext } from './ThemeContext';
-import styles from './Header.module.css';
+import styles from './Body.module.css';
 
 // Change theme via the props theme setter 
 const Header = () => {

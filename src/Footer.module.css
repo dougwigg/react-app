@@ -8,6 +8,7 @@
 }
 
 .footer select {
+    background-color: #fff;
     font-size: 1rem;
     margin-left: .25rem;
 }
@@ -18,7 +19,17 @@
     left: 20px;
     top: 20px;
     pointer-events: none;
-  }
+}
+
+@media (max-width: 480px) {
+    .footer {
+      padding: 2rem 1rem;
+    }
+    .logo {
+      top: 17px;
+      left: 0;
+    }
+}  
 
   @media (prefers-reduced-motion:no-preference) {
     .logo {
