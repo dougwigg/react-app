@@ -55,7 +55,7 @@ const Search = (props) => {
         const { dispatch } = value;
         return (
           <div className={styles.card}>
-            <Link to="/react-app/" className={styles.back}>
+            <Link to="/" className={styles.back}>
               &#8678;&nbsp;Homepage
             </Link>
             <h2>Song Lyric Search<span className={styles.desc}> - Search by artist/title</span></h2>
