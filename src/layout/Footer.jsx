@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import { ThemeContext } from './ThemeContext';
-import styles from './Footer.module.css';
+import styles from './Body.module.css';
 import themeStyles from './Theme.module.css';
 
 // Change theme via the props theme setter 

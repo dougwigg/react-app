@@ -14,7 +14,7 @@ const Track = props => {
                 <div className={styles.col}><span className={styles.label}>Album:</span> {track.album_name}</div>
                 <div className={styles.col}>
                     <Link
-                        to={`/react-app/project1/${track.track_id}`}
+                        to={`/project1/${track.track_id}`}
                         className={styles.viewLink}
                     >
                         View Lyrics

@@ -9,7 +9,7 @@ const HomeTOC = () => {
         <h2 className={styles.header}>Projects:</h2>
         <ol>
           <li className={styles.itm}>
-            <Link to="/react-app/covid-by-region">Covid Cases by Region</Link>
+            <Link to="/covid-by-region">Covid Cases by Region</Link>
             <p>
               <div>
                 As regions approach re-opening with different strategies, I thought it would be interestng
@@ -19,7 +19,7 @@ const HomeTOC = () => {
             </p>
           </li>
           <li className={styles.itm}>
-            <Link to="/react-app/project1">Song Lyric Search</Link>
+            <Link to="/project1">Song Lyric Search</Link>
             <p>
               <div>Song lyric search by artist/song title.</div>
               <div className={styles.tools}>Uses: Musixmatch API with Axios fetch.</div> 

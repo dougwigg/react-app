@@ -1,9 +1,9 @@
 import * as React from 'react';
 
 import { Link } from 'react-router-dom';
-import styles from './Project.module.css';
+import styles from '../Project.module.css';
 
-import CovidByRegion from './covid-by-region/CovidByRegion';
+import CovidByRegion from './CovidByRegion';
 
 const CovidByRegionBody = () => {
   return (
