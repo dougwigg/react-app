@@ -68,7 +68,7 @@ export const statesForRegion = {
   'midatlantic': ['NY', 'NJ', 'PA', 'DE', 'MD', 'VA', 'WV'],
   'southeast': ['AR', 'TN', 'NC', 'SC', 'LA', 'MS', 'AL', 'GA', 'FL'],
   'northwest': ['AK', 'WA', 'OR', 'ID', 'MT', 'WY'],
-  'midwest': ['ND', 'SD', 'NE', 'KS', 'WI', 'IA', 'MO', 'MI', 'IL', 'IN', 'OH', 'KY'],
+  'midwest': ['ND', 'SD', 'NE', 'KS', 'MN', 'IA', 'MO', 'WI', 'IL', 'MI', 'IN', 'OH', 'KY'],
   'southwest': ['UT', 'CO', 'NM', 'AZ', 'OK', 'TX'],
   'west': ['CA', 'NV', 'HI']
 };
