@@ -19,7 +19,7 @@ const HomeTOC = () => {
             </p>
           </li>
           <li className={styles.itm}>
-            <Link to="/project1">Song Lyric Search</Link>
+            <Link to="/song-lyrics">Song Lyric Search</Link>
             <p>
               <div>Song lyric search by artist/song title.</div>
               <div className={styles.tools}>Uses: Musixmatch API with Axios fetch.</div> 

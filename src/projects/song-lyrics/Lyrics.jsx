@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import { Link } from 'react-router-dom';
-import Moment from 'react-moment';
 import axios from 'axios';
 import { fetchMusixMatch } from './song-utils';
 import Spinner from './Spinner';
@@ -36,7 +35,7 @@ const Lyrics = props => {
       source.cancel();  
     }
   }, [songId, getLyrics, getTrackName]);
- 
+
   const hasTrack = track && 
                    lyrics && 
                    Object.keys(track).length > 0 && 
@@ -47,10 +46,9 @@ const Lyrics = props => {
   } else {
     return (
       <div>
-        <Link to="/react-app/project1" className={styles.back}>
+        <Link to="/song-lyrics" className={styles.back}>
           &#8678;&nbsp;Back to Search
         </Link>
-
         <h5 className={styles.title}>
           <span className={styles.disc}></span>
           <span>{track.track_name}</span>
@@ -72,12 +70,12 @@ const Lyrics = props => {
                 <div className={styles.infoLabel}>Explicit Words:</div>
                 {track.explicit === 0 ? 'No' : 'Yes'}
               </li>
-              <li className={styles.infoItem}>
-                <div className={styles.infoLabel}>Release Date:</div>
-                <Moment format="MM/DD/YYYY">
-                  {track.first_release_date}
-                </Moment>
-              </li>
+              { track.album_name && (
+                <li className={styles.infoItem}>
+                  <div className={styles.infoLabel}>Album:</div>
+                  {track.album_name}
+                </li>
+              )}  
               <li className={styles.infoItem}>
                 <div className={styles.infoLabel}>NOTE:</div>
                   With the FREE Musixmatch API 

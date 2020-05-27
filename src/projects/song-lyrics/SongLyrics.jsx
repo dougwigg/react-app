@@ -7,19 +7,17 @@ import * as React from 'react';
  *  https://github.com/movntains/Lyric-Finder
  */
 
-import { SearchProvider } from './song-lyrics/SearchContext';
-import Search from './song-lyrics/Search';
-import Tracks from './song-lyrics/Tracks';
+import { SearchProvider } from './SearchContext';
+import Search from './Search';
+import Tracks from './Tracks';
 
-const Project1 = () => {
+const SongLyrics = () => {
   return (
-    <>
-      <SearchProvider>
-        <Search />
-        <Tracks />
-      </SearchProvider>
-    </>
+    <SearchProvider>
+      <Search />
+      <Tracks />
+    </SearchProvider>
   );
 }
 
-export default Project1;
+export default SongLyrics;

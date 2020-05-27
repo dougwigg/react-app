@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Link } from 'react-router-dom';
-import styles from '../Project.module.css';
+import styles from '../../layout/Body.module.css';
 
 import CovidByRegion from './CovidByRegion';
 

@@ -1,3 +1,9 @@
+.backLink {
+  display: block;
+  color: inherit;
+  text-decoration: none;    
+}
+
 .header {
     font-size: 4rem;
     font-style: italic;
