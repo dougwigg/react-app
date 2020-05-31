@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { shape, string, number } from 'prop-types';
 
 import {
   BarChart,
@@ -9,12 +10,20 @@ import {
   ResponsiveContainer
 } from 'recharts';
 
+import { getWeeklyCasesAsPctOfPopulation } from './static'; 
+
 import styles from './Covid.module.css';
 
 const ChartForState = (props) => {
+  
+  const pctOfPop = getWeeklyCasesAsPctOfPopulation(props.data);
+
   return (
     <>
-      <h2 className={styles.chartHeader}>{props.label}</h2>  
+      <h2 className={styles.chartHeader}>
+        {props.label}{'  '}
+        <span className={styles.pct}>({pctOfPop}%)</span>
+      </h2>  
       <div className={styles.chartWrap}>
         <ResponsiveContainer>
           <BarChart data={props.data}>
@@ -28,6 +37,14 @@ const ChartForState = (props) => {
       </div>
     </>   
   );
+};
+
+ChartForState.propTypes = {
+  objectWithShape: shape({
+    date: string.isRequired,
+    'case increase': number.isRequired,  
+    'death increase': number.isRequired,
+  }).isRequired,
 };
 
 export default ChartForState;

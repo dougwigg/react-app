@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import ChartForState from './ChartForState';
+import ChartsForRegion from './ChartsForRegion';
 import SpinnerOrError from './SpinnerOrError';
 import { getLatestData, statesForRegion, stateNames } from './static';
 
@@ -89,24 +89,12 @@ const CovidByRegion = () => {
     }); 
   }, [states, getChartData, isLoading]);
 
-  const DisplayCharts = (props) => {
-    return ( 
-      Object.keys(props.covidData).map((key, idx) => {
-        return (
-          <div key={key} className={styles.chart}>
-            <ChartForState label={key} data={covidData[key]} />
-          </div>
-        );
-      })
-    )
-  };
- 
-  const header = `New Covid19 Cases/Deaths reported in the ${region} over the past week:`;
+  const header = `New Covid19 Cases/Deaths reported in the ${region} over the past week`;
 
   return (
     <div className={styles.body}>
       <div className={styles.header}>{header}</div>
-      
+      <div>*Percentages (%) are weekly new cases as a percentage of state population (June 2019).</div>
       <div className={styles.control}>
         Select region:&nbsp; 
         <select className={styles.select} onChange={e => dispatch({
@@ -134,7 +122,7 @@ const CovidByRegion = () => {
         { 
           isLoading || isError
           ? <SpinnerOrError errMsg={errMsg} />
-          : <DisplayCharts covidData={covidData} />
+          : <ChartsForRegion covidData={covidData} />
         }
       </div>
     </div>
