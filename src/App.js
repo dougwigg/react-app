@@ -18,7 +18,7 @@ function App() {
   const [themeStyle, setThemeStyle] = React.useState(themeStyles.darkTheme);
   return (
     <ThemeProvider theme={themeStyle}>
-      <Header title="React Sandbox" />
+      <Header title="React Projects" />
       <Router>
         <Switch>
           <Route path='/' exact component={BodyHOC(HomeTOC)} />

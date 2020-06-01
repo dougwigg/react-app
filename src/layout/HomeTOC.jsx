@@ -6,7 +6,6 @@ import styles from './HomeTOC.module.css';
 const HomeTOC = () => {
   return (
       <>
-        <h2 className={styles.header}>Projects:</h2>
         <ol>
           <li className={styles.itm}>
             <Link to="/covid-by-region">Covid Cases by Region</Link>

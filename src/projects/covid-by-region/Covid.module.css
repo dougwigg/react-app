@@ -31,7 +31,7 @@
   display: inline-block;
   width: 14px;
   height: 14px;
-  background-color: orange;
+  background-color:#b33426;
   margin: 0 .3rem;
   content: '';
   vertical-align: -1px;
@@ -52,11 +52,11 @@
     flex-wrap: wrap;
     margin:0 0 2rem;
     border-radius: 3px;
-    background-color: #e0d9d5;
+    background-color: #bbb;
 }
 
 .chartHeader {
-    color: #6f5337;
+    color: #982316;
     margin: 0 0 1rem;
     padding-top: 1rem;
     text-align: center;
@@ -71,7 +71,7 @@
 
 .chartWrap {
     border-radius: 3px;
-    background: rgba(255,255,255,.8);
+    background: rgba(255,255,255,.87);
     box-sizing: border-box;
     padding: 20px 5px 0;
     margin: 10px;
