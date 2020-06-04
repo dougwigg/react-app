@@ -9,7 +9,7 @@ const SpinnerOrError = (props) => {
     <>
       { 
         props.errMsg 
-        ? <div className={styles.error}>{errMsg}</div>
+        ? <div className={styles.error}>`Error fetching data from covidtracking.com: ${errMsg.toString()}`</div>
         : <Spinner />
       }
    </>

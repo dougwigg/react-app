@@ -30,7 +30,7 @@ const ChartForState = (props) => {
             <XAxis dataKey="date" />
             <YAxis/> 
             <Tooltip />
-            <Bar dataKey="case increase" fill="#b33426" />   /** #b33426 ff8400 */
+            <Bar dataKey="case increase" fill="#b33426" />
             <Bar dataKey="death increase" fill="#000" />
           </BarChart>
         </ResponsiveContainer>
