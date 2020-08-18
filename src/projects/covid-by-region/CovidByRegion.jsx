@@ -82,7 +82,7 @@ const CovidByRegion = () => {
 
   React.useEffect(() => {
     states.forEach((state) => {
-      fetch(`https://covidtracking.com/api/v1/states/${state.toLowerCase()}/daily.json`)
+      fetch(`https://cors-anywhere.herokuapp.com/https://covidtracking.com/api/v1/states/${state.toLowerCase()}/daily.json`)
         .then(response => response.json())
         .then(data => getChartData({ data }))
         .catch(error => dispatch({ type:'error', errMsg: error})); 
